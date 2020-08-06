@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using TestMvcCore.Models;
-
 namespace TestMvcCore.Repository
 {
     public class BookRepository : IBookRepository
@@ -16,7 +16,7 @@ namespace TestMvcCore.Repository
         }
         public BookModel GetBooks(int id)
         {
-            return BookDataSource().Where(x => x.Id == id).FirstOrDefault();
+            return  BookDataSource().Where(x => x.Id == id).FirstOrDefault();
 
         }
         public List<BookModel> SearchBook(string searchtext)

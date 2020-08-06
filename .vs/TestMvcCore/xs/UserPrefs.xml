@@ -1,21 +1,17 @@
 ﻿<Properties StartupConfiguration="{1FEAC312-1AD5-4020-AB74-F8B73379BAC0}|Default">
   <MonoDevelop.Ide.ItemProperties.TestMvcCore PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
-    <Files>
-      <File FileName="Controllers/BookController.cs" Line="23" Column="8" />
-      <File FileName="mvccore/README.md" />
-      <File FileName="mvccore/mvccore.git/config" />
-      <File FileName="Startup.cs" Line="29" Column="12" />
-      <File FileName="Models/LoginModel.cs" Line="16" Column="50" />
-      <File FileName="Repository/IBookRepository.cs" Line="1" Column="1" />
-      <File FileName="Program.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TestMvcCore" expanded="True">
             <Node name="TestMvcCore" expanded="True">
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Login" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

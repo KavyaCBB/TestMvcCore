@@ -36,7 +36,7 @@ namespace TestMvcCore.Controllers
 
         public BookModel GetBook(int id)
         {
-            return _bookRepo.GetBooks(id);
+            return  _bookRepo.GetBooks(id);
         }
         
     }
