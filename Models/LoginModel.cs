@@ -14,5 +14,7 @@ namespace TestMvcCore.Models
         public DateTime CreatedOn { get; set; }
         public DateTime UpdatedOn { get; set; }
         public DateTime DateOfBirth { get; set; }
+        public string ImagePath { get; set; }
+
     }
 }

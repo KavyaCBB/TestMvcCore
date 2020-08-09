@@ -1,17 +1,33 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{1FEAC312-1AD5-4020-AB74-F8B73379BAC0}|Default">
   <MonoDevelop.Ide.ItemProperties.TestMvcCore PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Views/Login/Index.cshtml" Line="5" Column="39" />
+      <File FileName="Views/Home/Index.cshtml" />
+      <File FileName="Controllers/LoginController.cs" Line="37" Column="1" />
+      <File FileName="Views/HealthDashboard/Index.cshtml" />
+      <File FileName="Views/Book/Index.cshtml" />
+      <File FileName="Views/Book/GetAllBooks.cshtml" />
+      <File FileName="Controllers/HealthDashboardController.cs" />
+      <File FileName="Repository/BookRepository.cs" />
+      <File FileName="Models/LoginModel.cs" />
+      <File FileName="Controllers/HomeController.cs" />
+      <File FileName="Controllers/BookController.cs" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
+      <File FileName="Models/Roles.cs" />
+      <File FileName="Models/TestResults.cs" />
+      <File FileName="Models/StaffModel.cs" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TestMvcCore" expanded="True" selected="True">
+          <Node name="TestMvcCore" expanded="True">
             <Node name="TestMvcCore" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="LoginController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Repository" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Login" expanded="True" />
-              </Node>
             </Node>
           </Node>
         </State>
@@ -21,7 +37,14 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/kavya/TestMvcCore/Controllers/LoginController.cs" relfile="Controllers/LoginController.cs" line="27" column="1" />
+      <Breakpoint file="/Users/kavya/TestMvcCore/Controllers/LoginController.cs" relfile="Controllers/LoginController.cs" line="37" column="1" />
+      <Breakpoint file="/Users/kavya/TestMvcCore/Controllers/LoginController.cs" relfile="Controllers/LoginController.cs" line="50" column="1" />
+      <Breakpoint file="/Users/kavya/TestMvcCore/Controllers/HealthDashboardController.cs" relfile="Controllers/HealthDashboardController.cs" line="15" column="1" />
+      <Breakpoint file="/Users/kavya/TestMvcCore/Controllers/LoginController.cs" relfile="Controllers/LoginController.cs" line="31" column="1" />
+      <Breakpoint file="/Users/kavya/TestMvcCore/Controllers/LoginController.cs" relfile="Controllers/LoginController.cs" line="43" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

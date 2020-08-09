@@ -13,21 +13,25 @@ namespace TestMvcCore.Controllers
 {
     public class LoginController : Controller
     {
-        // GET: Login
-        public ActionResult Index()
-        {
-            LoginModel loginModel = new LoginModel();
 
-            var login = new LoginModel()
-            {
-                Password = "123",
-                Name = "kavya"
-            };
+        public LoginModel loginModel = new LoginModel();
+        // GET: Login
+
+        public ViewResult Index()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Index(LoginModel _loginModel)
+        {
+           
+
             using (var client = new HttpClient())
             {
                // Create a query
                 UriBuilder builder = new UriBuilder("https://localhost:5001/api/login");
-                builder.Query = "userName=kavya&pass=123";
+                builder.Query = "userName="+_loginModel.Name +"&pass="+_loginModel.Password;
                 var responseTask = client.GetAsync(builder.Uri);
 
 
@@ -36,13 +40,14 @@ namespace TestMvcCore.Controllers
                 {
                     var readTask = result.Content.ReadAsStringAsync().Result;
                     //readTask.Wait();
-
+                    //TempData["loginModel"] = JsonConvert.SerializeObject( loginModel);
                     loginModel = JsonConvert.DeserializeObject<LoginModel>(readTask);
+                    TempData["loginModel"] = JsonConvert.SerializeObject(loginModel);
                 }
 
 
             }
-            return View();
+            return RedirectToAction("Index", "HealthDashboard", new { lModel = loginModel });
         }
 
         // GET: Login/Details/5

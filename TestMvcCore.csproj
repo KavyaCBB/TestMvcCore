@@ -15,5 +15,6 @@
     <Folder Include="Repository\" />
     <Folder Include="Views\Book\" />
     <Folder Include="Views\Login\" />
+    <Folder Include="Views\HealthDashboard\" />
   </ItemGroup>
 </Project>
